@@ -36,6 +36,33 @@ ul {
 	color: aqua;
 }
 
+.inicio:hover {
+	padding: 5px;
+	background-color: rgb(199, 245, 245);
+	border-radius: 20px;
+	font-size: 26px;
+}
+
+.destaque:hover {
+	padding: 5px;
+	background-color: rgb(199, 245, 245);
+	border-radius: 20px;
+	font-size: 26px;
+}
+
+.catalogo:hover {
+	padding: 5px;
+	background-color: rgb(199, 245, 245);
+	border-radius: 20px;
+	font-size: 26px;
+}
+
+.compras:hover {
+	padding: 5px;
+	background-color: rgb(199, 245, 245);
+	border-radius: 20px;
+	font-size: 26px;
+}
 /* Texto Principal */
 
 .texto-principal {
