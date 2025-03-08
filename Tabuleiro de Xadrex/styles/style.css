@@ -3,45 +3,34 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: white;
     margin: 0;
 }
 
 .tabuleiro {
-    width: 500px;
+    display: flex;
     height: 500px;
+    width: 500px;
+    border: solid, 3px, black;
+}
+
+.casa_black{
     display: flex;
-    flex-wrap: wrap;
-    border: 10px solid tomato;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex-wrap: nowrap;
+    width: 62px;
+    height: 62px;
 }
 
-.linha {
+.casa_lightgray{
     display: flex;
-    width: 100%;
+    flex-wrap: nowrap;
+    width: 62px;
+    height: 62px;
 }
 
-.casa {
-    width: 100px;
-    height: 100px;
-}
-
-.black {
+.casa_black:nth-child(even){
     background-color: black;
 }
 
-.lightgray {
-    background-color: lightgray;
-}
-
-.tabuleiro::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 10px solid red;
-    box-sizing: border-box;
+.casa_lightgray:nth-child(odd){
+    background-color: grey;
 }
